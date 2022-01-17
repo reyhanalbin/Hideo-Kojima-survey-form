@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hideo Kojima Survey Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1 id="title">Hideo Kojima Survey Form</h1>
+  <p id="description">Thank you for your participation</p>
+
+  <form id="survey-form">
+    <label for="name" id="name-label">
+      Name
+      <input type="text" id="name" placeholder="Enter your name" required />
+    </label>
+    <label for="email" id="email-label">
+      Email
+      <input type="email" id="email" placeholder="Enter your email" required />
+    </label>
+    <label for="number" id="number-label">
+      Age
+      <input type="number" id="number" placeholder="How old are you ?" min="17" max="45" />
+    </label>
+    <label for="dropdown" id="dropdown-label">
+      How do you know Hideo Kojima ?
+      <select id="dropdown">
+        <option>Social Media</option>
+        <option>News</option>
+        <option>Videogame</option>
+      </select>
+    </label>
+    <label for="game" id="game-label">
+      What is your favourite Hideo Kojima's game ?
+    </label>
+
+    <input type="radio" name="game" value="1" checked /> Metal Gear Solid series <br />
+    <input type="radio" name="game" value="2" /> Metal Gear Rising : Vengeance <br />
+    <input type="radio" name="game" value="3" /> Death Stranding <br />
+    <input type="radio" name="game" value="4" /> Others <br />
+
+    <br /><br />
+    <label for="elements" id="elements-label">
+      What is your interesting elements from Hideo Kojima's game ?
+    </label>
+    <input type="checkbox" value="open-world-system" /> open world system <br />
+    <input type="checkbox" value="stealth-mechanism" /> stealth mechanism <br />
+    <input type="checkbox" value="grinding-enjoyer" /> grinding enjoyer <br />
+    <input type="checkbox" value="story" /> story <br />
+    <input type="checkbox" value="graphic-aspect" /> graphic aspect <br />
+    <input type="checkbox" value="music-and-soundtrack" /> music and soundtrack <br />
+    <input type="checkbox" value="cast-and-voice-actor" /> cast and voice actor <br />
+    <br /><br />
+    <label for="comments" id="comments-label">
+      Any comments or suggestions?
+      <textarea id="comments" cols="30" rows="10"></textarea>
+    </label>
+
+    <button id="submit" type="submit">Submit</button>
+  </form>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
